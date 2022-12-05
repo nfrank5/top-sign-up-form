@@ -1,3 +1,113 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+
+/*  */
+
+@font-face {
+  font-family: 'norsebold';
+  src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+       url('fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  color: red;
+  display: flex;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+header {
+  background-image: url(photo-plant.avif);
+  width: 35vw;
+  height: 100vh;
+  position: relative;
+}
+
+.logo-odin {
+  font: 5rem "norsebold", monospace;
+  color: white;
+  display: flex;
+  height: 8rem;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  margin-top: 25vh;
+}
+
+header > div > img {
+  width: auto;
+  height: 6rem;
+}
+
+header > p {
+  display:inline-block;
+  color: white;
+  font: 0.7rem monospace ;
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+form > div:first-child, form > div:last-child {
+  background-color: rgba(241, 241, 241, 0.7);
+  padding: 10% 4%;
+  padding-bottom: 3%;
+
+}
+
+form {
+  width: 100%;
+}
+
+form > div > p:last-child {
+  margin-top: 1rem ;
+  background-color: rgba(241, 241, 241, 0.7);
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+}
+
+.label-input{
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  gap:40px;
+  padding: 10px 20px;
+}
+
+.top-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.data > p:first-child {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+label {
+  font-size: 0.6rem;
+}
+
+
+@media only screen and (min-width: 700px) {
+
 }
