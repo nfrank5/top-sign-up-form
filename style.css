@@ -8,7 +8,10 @@ input:focus {
   outline: none;
 }
 
-/*  */
+:root {
+  --create-account-height: 
+
+}
 
 @font-face {
   font-family: 'norsebold';
@@ -20,15 +23,15 @@ input:focus {
 
 body {
   display: flex;
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
 }
+
 header {
   background-image: url(photo-plant.avif);
-  width: 35vw;
+  width: 40vw;
   height: 100vh;
   position: relative;
+  background-size: cover;
 }
 
 .logo-odin {
@@ -58,20 +61,30 @@ header > p {
   text-align: center;
 }
 
-form > div:first-child, form > div:last-child {
-  background-color: rgba(241, 241, 241, 0.7);
-  padding: 10% 4%;
-  padding-bottom: 3%;
+form > div:first-child {
+  background-color: rgba(245, 245, 245, 0.7);
+  padding: 4.5rem 3rem 2rem 3rem;
+  height: 30%;
+  overflow:hidden;
 
+}
+
+form > div:last-child {
+  background-color: rgba(245, 245, 245, 0.7);
+  padding: 1.5rem 3rem 2rem 3rem;
+  position: absolute;
+  width: 100%;
+  height: 30% ;
 }
 
 form {
   width: 100%;
+  position: relative;
 }
 
 form > div > p:last-child {
   margin-top: 1rem ;
-  background-color: rgba(241, 241, 241, 0.7);
+  background-color: rgba(245, 245, 245, 0.5);
 }
 
 label {
@@ -87,27 +100,59 @@ label {
 
 li {
   display: flex;
-  gap:40px;
-  padding: 10px 20px;
+  gap: 3rem;
+  padding: 1rem 1rem;
 }
 
 .top-text {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .data > p:first-child {
-  padding-left: 20px;
-  padding-top: 10px;
   font-size: 1.3rem;
   font-weight: 500;
+  margin-left: 1rem;
 }
 
 label {
+  font-size: 0.8rem;
+}
+
+input:focus {
+  border: solid 1px blue;
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.527);
+  border-radius: 5px;
+}
+
+input {
+  border-radius: 4px;
+  border: 1px rgba(128, 128, 128, 0.3) solid;
+  height: 1.5rem;
+}
+
+.data {
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.527);
+  padding-left: 2rem;
+  padding-top: 1rem;
+  height: 40%;
+
+}
+
+span {
+  color: rgb(182, 66, 66);
   font-size: 0.6rem;
+  visibility: hidden;
+  margin: 5px;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  border-radius: 10px;
 }
 
 
-@media only screen and (min-width: 700px) {
-
-}
